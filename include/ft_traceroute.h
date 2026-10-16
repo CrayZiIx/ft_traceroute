@@ -9,5 +9,25 @@
 #endif
 
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+typedef struct s_config
+{
+    bool verbose;
+    bool help;
+    const char *target;
+} t_config;
+
+// define
+# define PROG_NAME "ft_traceroute"
+# define OK 0
+# define ERR 1
+# define USAGE \
+        "Usage: %s [OPTION...] HOST\n"\
+        "%s - Print the route packets trace to network host.\n"\
+        "\n"\
+        "Options:\n" \
+        "  -h        display this help and exit\n"
 
 #endif
