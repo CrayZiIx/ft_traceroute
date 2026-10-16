@@ -49,8 +49,6 @@ int main(int argc, char **argv) {
                 return OK;
         }
 
-
-
         printf("ft_traceroute\n");
         return OK;
 }
